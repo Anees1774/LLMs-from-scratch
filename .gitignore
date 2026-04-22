@@ -7,6 +7,7 @@ __pycache__/
 .ipynb_checkpoints/
 
 # Virtual environments
+.venv/
 venv/
 env/
 .env/
@@ -14,6 +15,7 @@ env/
 # IDE settings
 .idea/
 .vscode/
+.claude/
 *.swp
 *.swo
 
@@ -28,14 +30,29 @@ Thumbs.db
 # Distribution / packaging
 dist/
 build/
-*.egg-info/
 
-# Model checkpoints and weights (can be large)
+# Model checkpoints and weights (too large for GitHub)
 *.pt
 *.pth
 *.bin
 checkpoints/
+gpt2/
 
 # Logs
 *.log
 logs/
+
+# Generated data files
+sms_spam_collection/
+sms_spam_collection.zip
+train.csv
+validation.csv
+test.csv
+instruction-data.json
+instruction-data-with-response.json
+
+# Generated plots
+*.pdf
+
+# Misc
+test.ipynb
